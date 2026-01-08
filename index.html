@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link external stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+
+    <title>ZimoDev | Home</title>
+</head>
+<body>
+
+    <!-- Video background -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+        <source src="assets/videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <!-- navigation bar section -->
+    <nav>
+        <div class="logo">
+            <a href="index.html">ZimoDev</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="pages/about.html">About</a>
+            <a href="pages/experiences.html">Experiences</a>
+            <a href="pages/skills.html">Skills</a>
+            <a href="pages/educations.html">Educations</a>
+            <a href="pages/family.html">Family</a>
+            <a href="pages/gallery.html">Gallery</a>
+        </div>
+        <button onclick="myGithub()"><i class="ri-github-fill"></i> My Projects</button>
+    </nav>
+
+    <!-- hero section -->
+    <div class="hero">
+        <div class="left-section">
+            <h1>Hello, I am <span class="typed-text"></span></h1>
+            <p>
+                Welcome to my personal portfolio website. Here you can know more about me, my projects, and my skills. 
+                This website is built using HTML, CSS, and JavaScript.
+            </p>
+            <p>
+                My goal is to showcase my creativity and technical abilities in web development. 
+                Feel free to explore and connect with me for collaboration or inquiries.
+            </p>
+            <button onclick="exploreMore()"><i class="ri-arrow-right-circle-fill"></i> Explore More</button>
+        </div>
+        <div class="right-section">
+            <img src="assets/images/hero.jpg" alt="hero image" class="floating">
+        </div>
+    </div>
+
+    <!-- Audio Music -->
+    <div class="audio-box">
+        <div class="album">
+            <img src="assets/images/passacaglia.png">
+            <div class="title">
+                <h2>Passacaglia</h2>
+                <p>Handel/Halvorsen</p>
+            </div>
+        </div>
+        <audio id="audio" controls loop>
+            <source src="assets/audio/Passacaglia.mp3" type="audio/mpeg">
+            Browser anda tidak menyokong audio.
+        </audio>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> ZimoDev. All rights reserved.</p>
+        <iframe 
+            src="https://free.timeanddate.com/clock/ia7j2q7c/n122/tlmy40/fc606060/tct/pct/tt0" 
+            frameborder="0" 
+            width="242" 
+            height="18" 
+            allowtransparency="true">
+        </iframe>
+    </footer>
+
+
+    <!-- scripts -->
+    <script src="js/scripts.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>

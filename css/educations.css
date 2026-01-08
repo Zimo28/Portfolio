@@ -1,0 +1,147 @@
+/* Educations Style */
+
+/* Content */
+.content {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 40px 20px 0;
+}
+
+.content .top {
+    text-align: center;
+}
+
+.content .top h1 {
+  font-style: italic;
+    font-size: 48px;
+    margin-bottom: 100px;
+    text-decoration-line: underline;
+    text-underline-offset: 20px;
+}
+
+/* Timeline container */
+.timeline {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 20px;
+    border-left: 3px solid #ff6600;
+}
+
+/* Timeline items */
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+/* Dot */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background: #ff6600;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+/* Card */
+.timeline-card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    text-align: center;
+    position: relative; 
+    z-index: 1; 
+}
+
+/* Hover effect */
+.timeline-card:hover {
+    background: #126f86;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255,102,0,0.4);
+}
+
+
+/* Card image */
+.timeline-card img.timeline-img {
+    width: 140px;
+    height: 60px;
+    padding: 5px;
+    border-radius: 5%;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border: 2px solid #ff6600;
+}
+
+/* Card content */
+.timeline-card h3 {
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.timeline-card span {
+    display: block;
+    font-size: 14px;
+    color: #eeeeee;
+    margin-bottom: 10px;
+}
+
+.timeline-card p {
+    color: #eeeeee;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Map iframe */
+.timeline-card iframe {
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* Responsive Map */
+.map-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.map-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1400px) {
+    .content {
+        padding-top: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 15px;
+    }
+
+    .timeline-item::before {
+        left: -12px;
+    }
+
+    .timeline-card {
+        padding: 15px;
+    }
+}

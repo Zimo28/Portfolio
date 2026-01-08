@@ -1,0 +1,115 @@
+/* Experiences Style */
+
+/* Content */
+.content {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 40px 20px 0;
+}
+
+.content .top {
+    text-align: center;
+}
+
+.content .top h1 {
+  font-style: italic;
+    font-size: 48px;
+    margin-bottom: 100px;
+    text-decoration-line: underline;
+    text-underline-offset: 20px;
+}
+
+/* Card */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.experience-card {
+  background: #1e293b;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.experience-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+
+.card-content {
+  padding: 18px;
+}
+
+.card-content h3 {
+  margin: 0;
+  color: #93c5fd;
+  font-size: 18px;
+}
+
+.card-content p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #d1d5db;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+}
+
+
+/* Image Modal */
+.image-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal-box {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+.modal-box img {
+  width: 100%;
+  max-height: 100vh;
+  object-fit: contain;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+#modalCaption {
+  margin-top: 14px;
+  color: #e5e7eb;
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.image-modal .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1400px) {
+    .content {
+        padding-top: 130px;
+    }
+}

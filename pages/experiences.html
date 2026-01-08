@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link external stylesheets -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/experiences.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+
+    <title>ZimoDev | Experiences</title>
+</head>
+<body>
+
+    <!-- Video background -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+        <source src="../assets/videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <!-- navigation bar section -->
+    <nav>
+        <div class="logo">
+            <a href="../index.html">ZimoDev</a>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../pages/about.html">About</a>
+            <a href="../pages/experiences.html">Experiences</a>
+            <a href="../pages/skills.html">Skills</a>
+            <a href="../pages/educations.html">Educations</a>
+            <a href="../pages/family.html">Family</a>
+            <a href="../pages/gallery.html">Gallery</a>
+        </div>
+        <button onclick="myGithub()"><i class="ri-github-fill"></i> My Projects</button>
+    </nav>
+
+    <!-- content -->
+    <div class="content">
+        <div class="top">
+            <h1>Experiences</h1>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="experience-grid">
+
+                <div class="experience-card">
+                    <img 
+                        src="../assets/images/experiences/crewsemarak.jpg" 
+                        alt="Event Technical" 
+                        data-caption="Crew Program Semarak Seni Di Dewan Professional (4/1 - 6/1/2026)"
+                    />
+                        <div class="card-content">
+                            <h3>Technical Crew / Event Support</h3>
+                        <p>
+                            Involved in camera setup, audio visual, lighting, 
+                            LAN/WiFi networking and troubleshooting during events.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <img 
+                        src="../assets/images/experiences/internship.jpeg" 
+                        alt="Development"
+                        data-caption="Latihan Industri Di SUK Kelantan (8/9/2025)"
+                    />
+                        <div class="card-content">
+                            <h3>Internship SUK Kelantan</h3>
+                        <p>
+                            Underwent industrial training in the Human Resources Division 
+                            at SUK Kelantan in Kota Bharu, Kelantan for 2 months.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <img 
+                        src="../assets/images/experiences/web-development.jpeg" 
+                        alt="Development"
+                        data-caption="Membuat Tugasan Dalam Membangunkan Sistem Web Database (20/6/2025)"
+                    />
+                        <div class="card-content">
+                            <h3>Web Development</h3>
+                        <p>
+                            Web development using Basic HTML/CSS/JS, PHP/MySQL and Laravel as well as 
+                            other Frameworks with a focus on understanding basic systems.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <img 
+                    src="../assets/images/experiences/mds2025.jpeg" 
+                    alt="MDS2025" 
+                    data-caption="Hari Terakhir Bersama Pemimpin Minggu Destini Siswa (3/10/2025)"
+                    />
+                        <div class="card-content">
+                            <h3>Pemimpin Minggu Destini Siswa 2025</h3>
+                        <p>
+                            Becoming the Leader of UiTM Kelantan Branch 
+                            Student Destini Week for the 2nd time.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <img 
+                    src="../assets/images/experiences/mds2024.jpeg" 
+                    alt="MDS2024" 
+                    data-caption="Hari Terakhir Bersama Pemimpin Minggu Destini Siswa (4/10/2024)"
+                    />
+                        <div class="card-content">
+                            <h3>Pemimpin Minggu Destini Siswa 2024</h3>
+                        <p>
+                            Becoming the Leader of UiTM Kelantan Branch 
+                            Student Destini Week for the first time.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <img 
+                    src="../assets/images/experiences/kompang.jpeg" 
+                    alt="MDS2024" 
+                    data-caption="Team Kompang SMKTIP2 (18/5/2022)"
+                    />
+                        <div class="card-content">
+                            <h3>Team Kompang SMKTIP2</h3>
+                        <p>
+                            Becoming the Leader for the Kompang Accompaniment 
+                            During the Arrival of VIPs at SMKTIP2.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> ZimoDev. All rights reserved.</p>
+        <iframe src="https://free.timeanddate.com/clock/ia7j2q7c/n122/tlmy40/fc606060/tct/pct/tt0" frameborder="0" width="242" height="18" allowtransparency="true"></iframe>
+    </footer>
+
+
+    <!-- Image Modal - Close Zoom Preview -->
+    <div id="imageModal" class="image-modal">
+        <span class="close">&times;</span>
+        <div class="modal-box">
+            <img id="modalImage">
+            <div id="modalCaption"></div>
+        </div>
+    </div>
+
+
+    <!-- scripts -->
+    <script src="../js/scripts.js"></script>
+    <script src="../js/social-media.js"></script>
+
+    <script>
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        const modalCaption = document.getElementById("modalCaption");
+        const closeBtn = document.querySelector(".image-modal .close");
+
+        document.querySelectorAll(".experience-card img").forEach(img => {
+            img.addEventListener("click", () => {
+            modal.style.display = "flex";
+            modalImg.src = img.src;
+            modalCaption.textContent = img.dataset.caption || "";
+            });
+        });
+
+        closeBtn.onclick = () => modal.style.display = "none";
+        modal.onclick = (e) => {
+            if (e.target === modal) modal.style.display = "none";
+        };
+    </script>
+
+
+</body>
+</html>
